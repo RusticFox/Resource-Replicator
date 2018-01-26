@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+<name>Resource Replicator</name>
+<author>✬Rustic Fox✬, Chicken Plucker</author>
+<url>https://ludeon.com/forums/index.php?topic=37787.0\</url>
+<targetVersion>0.18.1722</targetVersion>
+<description>
+Life isn't easy enough? Featuring a machine that clones items for you!
+
+Featuring a product banned in multiple planets because governments deemed them "Overpowered" and companies couldn't exploit money out of you anymore!
+A machine capable of cloning organic objects but not a new girlfriend!
+
+
+Mod Features
+- Resource Replicator: Clones resources such as steel, wood, plasteel components and etc.
+- Organic Replicator: Clones organic material such as vegetables, food meals and converts all types of meat into beef
+- Medicinal Replicator: Clones drugs and medicines
+- Each bench requires 3,000W power
+- Spacer tech research
+- Comments complaining about this mod being overpowered
+
+
+Does not feature
+- Human cloning, the replicator cannot replicate souls, we don't want another little girl/dog hybrid accident.
+
+Research
+- ItemReplication 5000 base cost you must learn the basic before you can be a master.
+- OrganicReplicator 500 base cost
+- ResourceReplicator 500 base cost
+- MedicinalReplicator 500 base cost
+  
+Credits:
+
+[MGW] Henry - Created Original Duplication Mod Which this one is inspired by  
+
+Version: 1.2.1
+</description>
+</ModMetaData>
