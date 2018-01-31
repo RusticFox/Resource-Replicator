@@ -1109,4 +1109,6 @@
 		</products>
 	</RecipeDef>
 	
+	<Def Name="RF_RR_DefInsertion" Abstract="True" />
+	
 </Defs>
