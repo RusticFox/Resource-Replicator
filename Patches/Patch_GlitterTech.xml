@@ -129,7 +129,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Silicon>10</Silicon>
+			<Silicon>100</Silicon>
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
