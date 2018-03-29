@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="ModCheck.isModLoaded">
+				<modName>Industrialisation</modName>
+				<yourMod>Resource Replicator</yourMod>
+				<customMessageSuccess>Resource Replicator: Mod named "Industrialisation" detected, Adding Recipes.</customMessageSuccess>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>Defs/Def[@Name="RF_RR_DefInsertion"]</xpath>
+				<value>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RRConcrete</defName>
+		<label>Replicate Concrete</label>
+		<description>Replicates 50 Concrete into 100.</description>
+		<jobString>Replicating Concrete.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ind_Concrete</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ind_Concrete</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ind_Concrete>100</Ind_Concrete>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RRHighGradeSteel</defName>
+		<label>Replicate HighGradeSteel</label>
+		<description>Replicates 50 HighGradeSteel into 100.</description>
+		<jobString>Replicating HighGradeSteel.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ind_HighGradeSteel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ind_HighGradeSteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ind_HighGradeSteel>100</Ind_HighGradeSteel>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RRCopper</defName>
+		<label>Replicate Copper</label>
+		<description>Replicates 50 Copper into 100.</description>
+		<jobString>Replicating Copper.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ind_Copper</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ind_Copper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ind_Copper>100</Ind_Copper>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RRAluminium</defName>
+		<label>Replicate Aluminium</label>
+		<description>Replicates 50 Aluminium into 100.</description>
+		<jobString>Replicating Aluminum.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ind_Aluminium</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ind_Aluminium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ind_Aluminium>100</Ind_Aluminium>
+		</products>
+	</RecipeDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>
