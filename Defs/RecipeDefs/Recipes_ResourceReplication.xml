@@ -1068,7 +1068,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MechSerumHealer</li>
+						<li>MechSerumNeurotrainer</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
