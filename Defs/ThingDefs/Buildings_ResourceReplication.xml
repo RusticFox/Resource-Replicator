@@ -6,9 +6,13 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.4</staticSunShadowHeight>
 		<constructEffect>ConstructMetal</constructEffect>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<repairEffect>Repair</repairEffect>
 		<designationCategory>Production</designationCategory>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+          <li>BuildingsProduction</li>
+        </thingCategories>
 	</ThingDef>
 
 	<!--Resource Replicator-->
@@ -17,7 +21,6 @@
 		<label>resource replicator</label>
 		<description>A work station for duplicating resources</description>
 		<thingClass>Building_WorkTable</thingClass>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<graphicData>
 			<texPath>Things/Building/Production/Replicator</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -33,7 +36,7 @@
 		<costList>
 			<Steel>200</Steel>
 			<Plasteel>100</Plasteel>
-			<Component>20</Component>
+			<ComponentIndustrial>20</ComponentIndustrial>
 		</costList>
 		<rotatable>true</rotatable>
 		<passability>PassThroughOnly</passability>
@@ -59,7 +62,6 @@
 			</li>
             <li Class="CompProperties_Power">
             <compClass>CompPowerTrader</compClass>
-            <startElectricalFires>true</startElectricalFires>
             <basePowerConsumption>3000</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
@@ -80,7 +82,6 @@
 		<defName>OrganicReplicator</defName>
 		<label>organic replicator</label>
 		<description>A work station for duplicating organic material</description>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Production/OrganicReplicator</texPath>
@@ -97,7 +98,7 @@
 		<costList>
 			<Steel>200</Steel>
 			<Plasteel>100</Plasteel>
-			<Component>20</Component>
+			<ComponentIndustrial>20</ComponentIndustrial>
 		</costList>
 		<rotatable>true</rotatable>
 		<passability>PassThroughOnly</passability>
@@ -123,7 +124,6 @@
 			</li>
             <li Class="CompProperties_Power">
             <compClass>CompPowerTrader</compClass>
-            <startElectricalFires>true</startElectricalFires>
             <basePowerConsumption>3000</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
@@ -144,7 +144,6 @@
 		<defName>MedicinalReplicator</defName>
 		<label>medicinal replicator</label>
 		<description>"A work station for duplicating drugs and medicine.</description>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Production/MedicinalReplicator</texPath>
@@ -161,7 +160,7 @@
 		<costList>
 			<Steel>200</Steel>
 			<Plasteel>100</Plasteel>
-			<Component>25</Component>
+			<ComponentIndustrial>25</ComponentIndustrial>
 		</costList>
 		<rotatable>true</rotatable>
 		<passability>PassThroughOnly</passability>
@@ -187,7 +186,6 @@
 			</li>
             <li Class="CompProperties_Power">
             <compClass>CompPowerTrader</compClass>
-            <startElectricalFires>true</startElectricalFires>
             <basePowerConsumption>3000</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>

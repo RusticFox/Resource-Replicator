@@ -3,7 +3,7 @@
 <name>Resource Replicator</name>
 <author>✬Rustic Fox✬, Chicken Plucker</author>
 <url>https://ludeon.com/forums/index.php?topic=37787.0\</url>
-<targetVersion>0.18.1722</targetVersion>
+<targetVersion>0.19.2009</targetVersion>
 <description>
 Life isn't easy enough? Featuring a machine that clones items for you!
 
@@ -33,6 +33,6 @@ Credits:
 
 [MGW] Henry - Created Original Duplication Mod Which this one is inspired by  
 
-Version: 1.5.2
+Version: 1.6.0
 </description>
 </ModMetaData>

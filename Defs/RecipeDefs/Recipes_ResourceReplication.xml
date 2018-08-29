@@ -93,7 +93,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Component</li>
+						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
 				<count>25</count>
@@ -101,11 +101,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Component</li>
+				<li>ComponentIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Component>75</Component>
+			<ComponentIndustrial>75</ComponentIndustrial>
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
@@ -251,9 +251,8 @@
 		<products>
 			<Chemfuel>100</Chemfuel>
 		</products>
-	</RecipeDef>
-	
-		<RecipeDef ParentName="ResourceReplicatorBase">
+	</RecipeDef>	
+	<RecipeDef ParentName="ResourceReplicatorBase">
 		<defName>RRCloth</defName>
 		<label>Replicate Cloth</label>
 		<description>Replicates 50 Cloth into 100.</description>
@@ -277,8 +276,7 @@
 			<Cloth>100</Cloth>
 		</products>
 	</RecipeDef>
-	
-			<RecipeDef ParentName="ResourceReplicatorBase">
+	<RecipeDef ParentName="ResourceReplicatorBase">
 		<defName>RRSynthread</defName>
 		<label>Replicate Synthread</label>
 		<description>Replicates 50 Synthread into 100.</description>
@@ -302,8 +300,7 @@
 			<Synthread>100</Synthread>
 		</products>
 	</RecipeDef>
-	
-				<RecipeDef ParentName="ResourceReplicatorBase">
+	<RecipeDef ParentName="ResourceReplicatorBase">
 		<defName>RRHyperweave</defName>
 		<label>Replicate Hyperweave</label>
 		<description>Replicates 50 Hyperweave into 100.</description>
@@ -717,7 +714,7 @@
                   </categories>
 		</fixedIngredientFilter>
         <products>
-			<Cow_Meat>100</Cow_Meat>
+			<Meat_Cow>100</Meat_Cow>
 		</products>
 	</RecipeDef>
 <!-- Medicinal Replicator Recipes -->
@@ -730,7 +727,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>HerbalMedicine</li>
+						<li>MedicineHerbal</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -738,11 +735,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>HerbalMedicine</li>
+				<li>MedicineHerbal</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<HerbalMedicine>5</HerbalMedicine>
+			<MedicineHerbal>5</MedicineHerbal>
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
@@ -754,7 +751,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Medicine</li>
+						<li>MedicineIndustrial</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -762,23 +759,23 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Medicine</li>
+				<li>MedicineIndustrial</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Medicine>5</Medicine>
+			<MedicineIndustrial>5</MedicineIndustrial>
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRGlitterworldMedicine</defName>
-		<label>Replicate Glitterworld medicine</label>
-		<description>Replicates 1 Glitterworld medicine into 5.</description>
-		<jobString>Replicating GlitterworldMedicine.</jobString>
+		<defName>MRUltraTechMedicine</defName>
+		<label>Replicate Ultratech medicine</label>
+		<description>Replicates 1 Ultratech medicine into 5.</description>
+		<jobString>Replicating UltratechMedicine.</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GlitterworldMedicine</li>
+						<li>MedicineUltratech</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -786,11 +783,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>GlitterworldMedicine</li>
+				<li>MedicineUltratech</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GlitterworldMedicine>5</GlitterworldMedicine>
+			<MedicineUltratech>5</MedicineUltratech>
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
@@ -938,15 +935,15 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRPsychoidPekoe</defName>
-		<label>Replicate Psychoid pekoe</label>
-		<description>Replicates 1 PsychoidPekoe into 5.</description>
-		<jobString>Replicating PsychoidPekoe.</jobString>
+		<defName>MRPsychiteTea</defName>
+		<label>Replicate PsychiteTea</label>
+		<description>Replicates 1 PsychiteTea into 5.</description>
+		<jobString>Replicating PsychiteTea.</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>PsychoidPekoe</li>
+						<li>PsychiteTea</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -954,11 +951,11 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>PsychoidPekoe</li>
+				<li>PsychiteTea</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<PsychoidPekoe>5</PsychoidPekoe>
+			<PsychiteTea>5</PsychiteTea>
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
