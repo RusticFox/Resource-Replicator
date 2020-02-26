@@ -1056,7 +1056,9 @@
 		</products>
 	</RecipeDef>
 	
-			<RecipeDef ParentName="MedicinalReplicatorBase">
+  <!--==================== Disabled Due to unknown thingDef change =====================-->
+	
+	<!-- <RecipeDef ParentName="MedicinalReplicatorBase">
 		<defName>MRMechSerumNeurotrainer</defName>
 		<label>Replicate Mech serum neurotrainer</label>
 		<description>Replicates 1 Mech serum neurotrainer into 2.</description>
@@ -1065,7 +1067,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>MechSerumNeurotrainer</li>
+						<li>MechSerumNeurtotrainer</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1073,13 +1075,13 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>MechSerumNeurotrainer</li>
+				<li>MechSerumNeurtotrainer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<MechSerumNeurotrainer>2</MechSerumNeurotrainer>
+			<MechSerumNeurtotrainer>2</MechSerumNeurtotrainer>
 		</products>
-	</RecipeDef>
+	</RecipeDef> -->
 	
 	<RecipeDef ParentName="MedicinalReplicatorBase">
 		<defName>MRMechSerumResurrector</defName>

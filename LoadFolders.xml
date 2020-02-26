@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <!--=======================  Version Exclusive Content =======================-->
+
+<loadFolders>
+  <default>
+    <li>Defs</li>
+  </default>
+  <default>
+    <li>Textures</li>
+  </default>
+  <v1.1>
+    <li>Defs</li>
+    <li>Textures</li>
+    <li>v1.1</li>
+  </v1.1>
+</loadFolders>
