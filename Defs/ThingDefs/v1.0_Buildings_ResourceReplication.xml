@@ -63,7 +63,7 @@
 			</li>
             <li Class="CompProperties_Power">
             <compClass>CompPowerTrader</compClass>
-            <basePowerConsumption>3000</basePowerConsumption>
+            <basePowerConsumption>6000</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
@@ -124,7 +124,7 @@
 			</li>
             <li Class="CompProperties_Power">
             <compClass>CompPowerTrader</compClass>
-            <basePowerConsumption>3000</basePowerConsumption>
+            <basePowerConsumption>6000</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
@@ -141,7 +141,7 @@
 	<ThingDef ParentName="RRBase">
 		<defName>MedicinalReplicator</defName>
 		<label>medicinal replicator</label>
-		<description>"A work station for duplicating drugs and medicine.</description>
+		<description>A work station for duplicating drugs and medicine.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Production/MedicinalReplicator</texPath>
@@ -185,7 +185,7 @@
 			</li>
             <li Class="CompProperties_Power">
             <compClass>CompPowerTrader</compClass>
-            <basePowerConsumption>3000</basePowerConsumption>
+            <basePowerConsumption>6000</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
@@ -197,6 +197,6 @@
 		<building>
 			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
 		</building>
-	</ThingDef>		
+	</ThingDef>			
 	
 </Defs> 

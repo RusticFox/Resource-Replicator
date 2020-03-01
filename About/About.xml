@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-<name>Resource Replicator (1.0/1.1)</name>
+<name>Resource Replicator [1.0/1.1]</name>
 <author>✬Rustic Fox✬, Chicken Plucker</author>
 <packageId>RusticFox.ChickenPlucker.RR</packageId>
 <supportedVersions>
@@ -19,7 +19,7 @@ Mod Features
 - Resource Replicator: Clones resources such as steel, wood, plasteel components and etc.
 - Organic Replicator: Clones organic material such as vegetables, food meals and converts all types of meat into beef
 - Medicinal Replicator: Clones drugs and medicines
-- Each bench requires 3,000W power
+- Each bench requires 6,000W power
 - Requires appropriate research found under the Rustic's Mods tab
 - Comments complaining about this mod being overpowered
 
@@ -33,10 +33,8 @@ Does not feature
 Credits:
 
 [MGW] Henry - Created Original Duplication Mod Which this one is inspired by
-Rustic Fox - Original coder, for refining the mod ever since B18.
+Chicken Plucker - Art and CoDev , for maintaining the mod during RW1.0.
 
-Goodluck in the military bro, see ya later!
-
-Version: 1.7.2
+Version: 1.7.6.8
 </description>
 </ModMetaData>

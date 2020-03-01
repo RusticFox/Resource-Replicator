@@ -35,9 +35,21 @@
 			<li>MedicinalReplicator</li>
 		</recipeUsers>
 	</RecipeDef>
+	<RecipeDef Name="TechReplicatorBase" Abstract="True">
+		<jobString>Allows you to replicate advanced technology.</jobString>
+		<workAmount>300</workAmount>
+		<effectWorking>ConstructMetal</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.3</workSkillLearnFactor>
+		<recipeUsers>
+			<li>TechReplicator</li>
+		</recipeUsers>
+	</RecipeDef>	
+	
 <!--Resource Replicator Recipes-->
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRSteel</defName>
+		<defName>RF_RRSteel</defName>
 		<label>Replicate Steel</label>
 		<description>Duplicates 50 Steel into 100.</description>
 		<jobString>Duplicating steel.</jobString>
@@ -61,7 +73,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRWood</defName>
+		<defName>RF_RRWood</defName>
 		<label>Replicate Wood</label>
 		<description>Replicates 50 Wood into 100.</description>
 		<jobString>Replicating wood.</jobString>
@@ -85,7 +97,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRComponent</defName>
+		<defName>RF_RRComponent</defName>
 		<label>Replicate Component</label>
 		<description>Replicates 25 Components into 75.</description>
 		<jobString>replicating components.</jobString>
@@ -109,7 +121,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRPlasteel</defName>
+		<defName>RF_RRPlasteel</defName>
 		<label>Replicate Plasteel</label>
 		<description>Replicates 50 Plasteel into 100.</description>
 		<jobString>Duplicating plasteel.</jobString>
@@ -133,7 +145,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRUranium</defName>
+		<defName>RF_RRUranium</defName>
 		<label>Replicate Uranium</label>
 		<description>Replicates 50 Uranium into 100.</description>
 		<jobString>Replicating uranium.</jobString>
@@ -157,7 +169,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRGold</defName>
+		<defName>RF_RRGold</defName>
 		<label>Replicate Gold</label>
 		<description>Replicate 50 Gold into 100.</description>
 		<jobString>Replicating gold.</jobString>
@@ -181,7 +193,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRSilver</defName>
+		<defName>RF_RRSilver</defName>
 		<label>Replicate Silver</label>
 		<description>Replicates 500 Silver into 1000.</description>
 		<jobString>Replicating silver.</jobString>
@@ -205,7 +217,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRJade</defName>
+		<defName>RF_RRJade</defName>
 		<label>Replicate Jade</label>
 		<description>Replicates 50 Jade into 100.</description>
 		<jobString>Replicating Jade.</jobString>
@@ -229,7 +241,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRChemfuel</defName>
+		<defName>RF_RRChemfuel</defName>
 		<label>Replicate Chemfuel</label>
 		<description>Replicates 50 Chemfuel into 100.</description>
 		<jobString>Replicating chemfuel.</jobString>
@@ -253,7 +265,7 @@
 		</products>
 	</RecipeDef>	
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRCloth</defName>
+		<defName>RF_RRCloth</defName>
 		<label>Replicate Cloth</label>
 		<description>Replicates 50 Cloth into 100.</description>
 		<jobString>Replicating cloth.</jobString>
@@ -277,10 +289,10 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRSynthread</defName>
+		<defName>RF_RRSynthread</defName>
 		<label>Replicate Synthread</label>
 		<description>Replicates 50 Synthread into 100.</description>
-		<jobString>Replicating cloth.</jobString>
+		<jobString>Replicating synththread.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -301,10 +313,10 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="ResourceReplicatorBase">
-		<defName>RRHyperweave</defName>
+		<defName>RF_RRHyperweave</defName>
 		<label>Replicate Hyperweave</label>
 		<description>Replicates 50 Hyperweave into 100.</description>
-		<jobString>Replicating cloth.</jobString>
+		<jobString>Replicating hyperweave.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -324,9 +336,274 @@
 			<Hyperweave>100</Hyperweave>
 		</products>
 	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RRGranite</defName>
+		<label>Replicate Granite Blocks</label>
+		<description>Replicates 20 Granite Blocks into 40.</description>
+		<jobString>Replicating granite.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksGranite</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksGranite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksGranite>40</BlocksGranite>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RRLimestone</defName>
+		<label>Replicate Limestone Blocks</label>
+		<description>Replicates 20 Limestone Blocks into 40.</description>
+		<jobString>Replicating limestone.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksLimestone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksLimestone>40</BlocksLimestone>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RRSandstone</defName>
+		<label>Replicate Sandstone Blocks</label>
+		<description>Replicates 20 Sandstone Blocks into 40.</description>
+		<jobString>Replicating sandstone.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksSandstone</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksSandstone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksSandstone>40</BlocksSandstone>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RRSlate</defName>
+		<label>Replicate Slate Blocks</label>
+		<description>Replicates 20 Slate Blocks into 40.</description>
+		<jobString>Replicating slate.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksSlate</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksSlate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksSlate>40</BlocksSlate>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RRMarble</defName>
+		<label>Replicate Marble Blocks</label>
+		<description>Replicates 20 Marble Blocks into 40.</description>
+		<jobString>Replicating marble.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BlocksMarble</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>BlocksMarble</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BlocksMarble>40</BlocksMarble>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RREMPShell</defName>
+		<label>Replicate EMP Shell</label>
+		<description>Replicates 1 EMP shell into 2.</description>
+		<jobString>Replicating EMP shell.</jobString>
+		<ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>Shell_EMP</li>
+                </thingDefs>
+              </filter>
+                <count>1</count>
+            </li>
+		</ingredients>
+		<fixedIngredientFilter>
+            <thingDefs>
+              <li>Shell_EMP</li>
+            </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Shell_EMP>2</Shell_EMP>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RRHEShell</defName>
+		<label>Replicate HE Shell</label>
+		<description>Replicates 1 HE shell into 2.</description>
+		<jobString>Replicating HE shell.</jobString>
+		<ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>Shell_HighExplosive</li>
+                </thingDefs>
+              </filter>
+                <count>1</count>
+            </li>
+		</ingredients>
+		<fixedIngredientFilter>
+            <thingDefs>
+              <li>Shell_HighExplosive</li>
+            </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Shell_HighExplosive>2</Shell_HighExplosive>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RRIncendiaryShell</defName>
+		<label>Replicate Incendiary Shell</label>
+		<description>Replicates 1 incendiary shell into 2.</description>
+		<jobString>Replicating Incendiary shell.</jobString>
+		<ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>Shell_Incendiary</li>
+                </thingDefs>
+              </filter>
+                <count>1</count>
+            </li>
+		</ingredients>
+		<fixedIngredientFilter>
+            <thingDefs>
+              <li>Shell_Incendiary</li>
+            </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Shell_Incendiary>2</Shell_Incendiary>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RRFirefoamShell</defName>
+		<label>Replicate Firefoam Shell</label>
+		<description>Replicates 1 firefoam shell into 2.</description>
+		<jobString>Replicating Firefoam shell.</jobString>
+		<ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>Shell_Firefoam</li>
+                </thingDefs>
+              </filter>
+                <count>1</count>
+            </li>
+		</ingredients>
+		<fixedIngredientFilter>
+            <thingDefs>
+              <li>Shell_Firefoam</li>
+            </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Shell_Firefoam>2</Shell_Firefoam>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RRAntigrainShell</defName>
+		<label>Replicate Antigrain Shell</label>
+		<description>Replicates 1 antigrain shell into 2.</description>
+		<jobString>Replicating Antigrain shell.</jobString>
+		<ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>Shell_AntigrainWarhead</li>
+                </thingDefs>
+              </filter>
+                <count>1</count>
+            </li>
+		</ingredients>
+		<fixedIngredientFilter>
+            <thingDefs>
+              <li>Shell_AntigrainWarhead</li>
+            </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Shell_AntigrainWarhead>2</Shell_AntigrainWarhead>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="ResourceReplicatorBase">
+		<defName>RF_RRAdvancedComponent</defName>
+		<label>Replicate Advanced Component</label>
+		<description>Replicates 1 advanced component into 2.</description>
+		<jobString>Replicating Advanced Components.</jobString>
+		<ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>ComponentSpacer</li>
+                </thingDefs>
+              </filter>
+                <count>1</count>
+            </li>
+		</ingredients>
+		<fixedIngredientFilter>
+            <thingDefs>
+              <li>ComponentSpacer</li>
+            </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<ComponentSpacer>2</ComponentSpacer>
+		</products>
+	</RecipeDef>	
+	
 <!-- Organic Replicator Recipes -->
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORMealSurvivalPack</defName>
+		<defName>RF_ORMealSurvivalPack</defName>
 		<label>Replicate Survival pack</label>
 		<description>Replicates 1 Survival Pack into 5.</description>
 		<jobString>Replicating Survival Pack.</jobString>
@@ -350,7 +627,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORMealSimple</defName>
+		<defName>RF_ORMealSimple</defName>
 		<label>Replicate Simple meal</label>
 		<description>Replicates 1 Simple Meal into 5.</description>
 		<jobString>Replicating Simple Meal.</jobString>
@@ -374,7 +651,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORMealFine</defName>
+		<defName>RF_ORMealFine</defName>
 		<label>Replicate Fine meal</label>
 		<description>Replicates 1 Fine Meal into 5.</description>
 		<jobString>replicating fine meal.</jobString>
@@ -398,7 +675,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORMealLavish</defName>
+		<defName>RF_ORMealLavish</defName>
 		<label>Replicate Lavish meal</label>
 		<description>Replicates 1 Lavish Meal into 5.</description>
 		<jobString>Replicating Lavish Meal.</jobString>
@@ -422,7 +699,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORKibble</defName>
+		<defName>RF_ORKibble</defName>
 		<label>Replicate Kibble</label>
 		<description>Replicates 50 Kibble into 100 Kibble.</description>
 		<jobString>Replicating Kibble.</jobString>
@@ -446,7 +723,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORHops</defName>
+		<defName>RF_ORHops</defName>
 		<label>Replicate Hops</label>
 		<description>Replicates 50 Hops to 100.</description>
 		<jobString>Replicating Hops.</jobString>
@@ -470,7 +747,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORHay</defName>
+		<defName>RF_ORHay</defName>
 		<label>Replicate Hay</label>
 		<description>Replicate 50 Hay into 100.</description>
 		<jobString>Replicating hay.</jobString>
@@ -494,7 +771,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORPemmican</defName>
+		<defName>RF_ORPemmican</defName>
 		<label>Replicate Pemmican</label>
 		<description>Replicates 50 Pemmican into 100.</description>
 		<jobString>Replicating Pemmican.</jobString>
@@ -518,7 +795,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORSmokeleaf</defName>
+		<defName>RF_ORSmokeleaf</defName>
 		<label>Replicate Smokeleaf</label>
 		<description>Replicates 50 smokeleaf leaves into 100.</description>
 		<jobString>Replicating smokeleaf leaves.</jobString>
@@ -543,7 +820,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORRawRice</defName>
+		<defName>RF_ORRawRice</defName>
 		<label>Replicate Rice</label>
 		<description>Replicates 50 RawRice into 100.</description>
 		<jobString>Replicating Rice.</jobString>
@@ -568,7 +845,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORRawPotatoes</defName>
+		<defName>RF_ORRawPotatoes</defName>
 		<label>Replicate Potatoes</label>
 		<description>Replicates 50 RawPotatoes into 100.</description>
 		<jobString>Replicating Potatoes.</jobString>
@@ -593,7 +870,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORRawCorn</defName>
+		<defName>RF_ORRawCorn</defName>
 		<label>Replicate Corn</label>
 		<description>Replicates 50 RawCorn into 100.</description>
 		<jobString>Replicating Corn.</jobString>
@@ -618,7 +895,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORRawBerries</defName>
+		<defName>RF_ORRawBerries</defName>
 		<label>Replicate Berries</label>
 		<description>Replicates 50 RawBerries into 100.</description>
 		<jobString>Replicating Berries.</jobString>
@@ -643,7 +920,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORInsectJelly</defName>
+		<defName>RF_ORInsectJelly</defName>
 		<label>Replicate Insect jelly</label>
 		<description>Replicates 50 Insectjelly into 100.</description>
 		<jobString>Replicating InsectJelly.</jobString>
@@ -668,7 +945,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORChocolate</defName>
+		<defName>RF_ORChocolate</defName>
 		<label>Replicate Chocolate</label>
 		<description>Replicates 50 Chocolate into 100.</description>
 		<jobString>Replicating InsectJelly.</jobString>
@@ -693,7 +970,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="OrganicReplicatorBase">
-		<defName>ORMeat</defName>
+		<defName>RF_ORMeat</defName>
 		<label>Replicate Meat</label>
 		<description>Replicates 50 Meat into 100 Beef.</description>
 		<jobString>Replicating Meat.</jobString>
@@ -717,9 +994,10 @@
 			<Meat_Cow>100</Meat_Cow>
 		</products>
 	</RecipeDef>
+	
 <!-- Medicinal Replicator Recipes -->
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRHerbalMedicine</defName>
+		<defName>RF_MRHerbalMedicine</defName>
 		<label>Replicate Herbal medicine</label>
 		<description>Replicates 1 Herbal medicine into 5.</description>
 		<jobString>Replicating Herbal Medicine.</jobString>
@@ -743,7 +1021,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRMedicine</defName>
+		<defName>RF_MRMedicine</defName>
 		<label>Replicate Medicine</label>
 		<description>Replicates 1 Medicine into 5.</description>
 		<jobString>Replicating Medicine.</jobString>
@@ -767,7 +1045,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRUltraTechMedicine</defName>
+		<defName>RF_MRUltraTechMedicine</defName>
 		<label>Replicate Glitterworld medicine</label>
 		<description>Replicates 1 Glitterworld medicine into 5.</description>
 		<jobString>Replicating UltratechMedicine.</jobString>
@@ -791,7 +1069,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRNeutroamine</defName>
+		<defName>RF_MRNeutroamine</defName>
 		<label>Replicate Neutroamine</label>
 		<description>Replicates 1 neutroamine into 5.</description>
 		<jobString>Replicating neutroamine.</jobString>
@@ -815,7 +1093,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRAmbrosia</defName>
+		<defName>RF_MRAmbrosia</defName>
 		<label>Replicate Ambrosia</label>
 		<description>Replicates 1 ambrosia into 5.</description>
 		<jobString>Replicating ambrosia.</jobString>
@@ -839,7 +1117,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRGoJuice</defName>
+		<defName>RF_MRGoJuice</defName>
 		<label>Replicate Go-Juice</label>
 		<description>Replicates 1 GoJuice into 5.</description>
 		<jobString>Replicating GoJuice.</jobString>
@@ -863,7 +1141,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRLuciferium</defName>
+		<defName>RF_MRLuciferium</defName>
 		<label>Replicate Luciferium</label>
 		<description>Replicates 1 Luciferium into 5.</description>
 		<jobString>Replicating Luciferium.</jobString>
@@ -887,7 +1165,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRPenoxycyline</defName>
+		<defName>RF_MRPenoxycyline</defName>
 		<label>Replicate Penoxycyline</label>
 		<description>Replicates 1 Penoxycyline into 5.</description>
 		<jobString>Replicating Penoxycyline.</jobString>
@@ -911,7 +1189,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRFlake</defName>
+		<defName>RF_MRFlake</defName>
 		<label>Replicate Flake</label>
 		<description>Replicates 1 Flake into 5.</description>
 		<jobString>Replicating Flake.</jobString>
@@ -935,7 +1213,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRPsychiteTea</defName>
+		<defName>RF_MRPsychiteTea</defName>
 		<label>Replicate PsychiteTea</label>
 		<description>Replicates 1 PsychiteTea into 5.</description>
 		<jobString>Replicating PsychiteTea.</jobString>
@@ -959,7 +1237,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRYayo</defName>
+		<defName>RF_MRYayo</defName>
 		<label>Replicate Yayo</label>
 		<description>Replicates 1 Yayo into 5.</description>
 		<jobString>Replicating Yayo.</jobString>
@@ -983,7 +1261,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRWakeUp</defName>
+		<defName>RF_MRWakeUp</defName>
 		<label>Replicate Wake-Up</label>
 		<description>Replicates 1 Wake-Up into 5.</description>
 		<jobString>Replicating WakeUp.</jobString>
@@ -1007,7 +1285,7 @@
 		</products>
 	</RecipeDef>
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRBeer</defName>
+		<defName>RF_MRBeer</defName>
 		<label>Replicate Beer</label>
 		<description>Replicates 1 Beer into 5.</description>
 		<jobString>Replicating Beer.</jobString>
@@ -1030,9 +1308,8 @@
 			<Beer>5</Beer>
 		</products>
 	</RecipeDef>
-	
-		<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRMechSerumHealer</defName>
+	<RecipeDef ParentName="MedicinalReplicatorBase">
+		<defName>RF_MRMechSerumHealer</defName>
 		<label>Replicate Mech serum healer</label>
 		<description>Replicates 1 Mech serum healer into 2.</description>
 		<jobString>Replicating mech serum healer.</jobString>
@@ -1055,34 +1332,8 @@
 			<MechSerumHealer>2</MechSerumHealer>
 		</products>
 	</RecipeDef>
-	
-			<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRMechSerumNeurotrainer</defName>
-		<label>Replicate Mech serum neurotrainer</label>
-		<description>Replicates 1 Mech serum neurotrainer into 2.</description>
-		<jobString>Replicating mech serum neurotrainer.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>MechSerumNeurotrainer</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>MechSerumNeurotrainer</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<MechSerumNeurotrainer>2</MechSerumNeurotrainer>
-		</products>
-	</RecipeDef>
-	
 	<RecipeDef ParentName="MedicinalReplicatorBase">
-		<defName>MRMechSerumResurrector</defName>
+		<defName>RF_MRMechSerumResurrector</defName>
 		<label>Replicate Mech serum resurrector</label>
 		<description>Replicates 1 Mech serum resurrector into 2.</description>
 		<jobString>Replicating mech serum resurrector.</jobString>
@@ -1103,6 +1354,30 @@
 		</fixedIngredientFilter>
 		<products>
 			<MechSerumResurrector>2</MechSerumResurrector>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="MedicinalReplicatorBase">
+		<defName>RF_MRMechSerumNeurotrainer</defName>
+		<label>Replicate Mech serum neurotrainer</label>
+		<description>Replicates 1 Mech serum neurotrainer into 2.</description>
+		<jobString>Replicating mech serum neurotrainer.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MechSerumNeurotrainer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MechSerumNeurotrainer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MechSerumNeurotrainer>2</MechSerumNeurotrainer>
 		</products>
 	</RecipeDef>
 	
