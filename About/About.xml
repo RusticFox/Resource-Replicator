@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-<name>Resource Replicator [1.0/1.1]</name>
+<name>Resource Replicator [1.0->1.2]</name>
 <author>✬Rustic Fox✬, Chicken Plucker</author>
 <packageId>RusticFox.ChickenPlucker.RR</packageId>
 <supportedVersions>
     <li>1.0</li>
     <li>1.1</li>
+    <li>1.2</li>
 </supportedVersions>
 <description>
 Life isn't easy enough? Behold, a machine that clones items for you!
@@ -35,6 +36,6 @@ Credits:
 [MGW] Henry - Created Original Duplication Mod Which this one is inspired by
 Chicken Plucker - Art and CoDev , for maintaining the mod during RW1.0.
 
-Version: 1.7.6.8
+Version: 1.8.6.8
 </description>
 </ModMetaData>
